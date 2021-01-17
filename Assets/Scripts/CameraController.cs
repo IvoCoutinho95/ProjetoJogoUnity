@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class CameraController : MonoBehaviour
 {
@@ -27,6 +28,7 @@ public class CameraController : MonoBehaviour
         pivot.transform.parent = target.transform;
 
         Cursor.lockState = CursorLockMode.Locked;
+        
     }
 
     // LateUpdate acontece depois de update (Para a camara se mover depois do jogador)
